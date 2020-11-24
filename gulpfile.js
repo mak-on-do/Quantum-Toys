@@ -41,6 +41,7 @@ function images() {
 function jslibs() {
     return src([
             'node_modules/jquery/dist/jquery.js',
+            'node_modules/rateyo/src/jquery.rateyo.js',
             'node_modules/slick-carousel/slick/slick.js',
             'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
         ])
@@ -61,6 +62,7 @@ function scripts() {
 function csslibs() {
     return src([
             'node_modules/normalize.css/normalize.css',
+            'node_modules/rateyo/src/jquery.rateyo.css',
             'node_modules/slick-carousel/slick/slick.css',
             'node_modules/magnific-popup/dist/magnific-popup.css',
             'node_modules/animate.css/animate.css'
@@ -106,14 +108,14 @@ function watching() {
     watch(['app/*.html']).on('change', browserSync.reload);
 }
 
-exports.styles = styles;
-exports.watching = watching;
-exports.browsersync = browsersync;
-exports.scripts = scripts;
-exports.jslibs = jslibs;
-exports.csslibs = csslibs;
-exports.images = images;
 exports.cleanDist = cleanDist;
+exports.images = images;
+exports.csslibs = csslibs;
+exports.styles = styles;
+exports.jslibs = jslibs;
+exports.scripts = scripts;
+exports.browsersync = browsersync;
+exports.watching = watching;
 
 exports.build = series(cleanDist, images, build);
 exports.default = parallel(csslibs, styles, jslibs, scripts, browsersync, watching);

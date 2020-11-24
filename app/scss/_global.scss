@@ -18,6 +18,7 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
+    color: inherit;
 }
 
 ul,
@@ -27,8 +28,21 @@ li {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 body {
-    background: #E5E5E5;
+    background: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -40,4 +54,56 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.title-wrapper {
+    display: flex;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 70px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    position: relative;
+    padding-left: 500px;
+    display: inline-block;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 2px;
+        max-width: 430px;
+        width: 100%;
+        background: #000;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: -500px;
+        top: 50%;
+        height: 2px;
+        max-width: 430px;
+        width: 100%;
+        background: #000;
+    }
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.btn-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding: 24px 65px 29px;
+    background: #219BB7;
+    box-shadow: 0px -5px 10px rgba(33, 155, 183, 0.6), 0px 5px 10px rgba(33, 155, 183, 0.6);
 }
