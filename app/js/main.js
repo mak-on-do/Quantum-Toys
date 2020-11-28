@@ -59,7 +59,5 @@ $(function() {
         $('.header__btn').toggle();
     });
 
-    AOS.init();
-
 
 });
