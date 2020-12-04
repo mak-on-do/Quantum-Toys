@@ -20,9 +20,6 @@
     }
     .header__logo {
         margin-bottom: 30px;
-        img {
-            width: 430px;
-        }
     }
     .catalog__inner {
         padding-top: 100px;
@@ -76,11 +73,14 @@
         right: 0;
         text-align: center;
         z-index: 1;
-        padding-bottom: 70px;
+        padding-bottom: 195px;
         &__link {
             display: block;
             padding: 10px 0;
             border-bottom: 1px solid #fff;
+            &::before {
+                height: 0;
+            }
         }
         &__list {
             display: block;
@@ -105,9 +105,6 @@
         }
         .header__logo {
             margin-bottom: 20px;
-            img {
-                width: 330px;
-            }
         }
         .header::after {
             border-top-width: 130px;
@@ -118,12 +115,6 @@
         padding: 10px 16px 11px;
         font-size: 10px;
         line-height: 13px;
-    }
-    .header__logo img {
-        width: 300px;
-    }
-    .catalog__inner {
-        padding-top: 60px;
     }
     .title {
         margin-bottom: 50px;
@@ -136,7 +127,10 @@
     }
     .catalog {
         margin: 129px 0 129px;
-        &__item-title {
+        &__inner {
+            padding-top: 60px;
+        }
+        &-item__title {
             font-size: 27px;
             line-height: 30px;
         }
@@ -148,7 +142,7 @@
     }
     .blog::after {
         border-bottom-width: 99px;
-        bottom: -99px;
+        bottom: -98px;
     }
     .blog__items {
         margin-bottom: 50px;
@@ -164,14 +158,9 @@
         margin: auto 10px 10px;
     }
     .mfp-gallery__item {
+        margin-right: 0;
         img {
             max-width: 330px;
-        }
-        &:nth-child(2n) {
-            margin-right: 0;
-        }
-        &:nth-child(2n+1) {
-            margin-right: 30px;
         }
     }
     .gallery__list {
@@ -225,9 +214,6 @@
         border-top-width: 120px;
         bottom: -120px;
     }
-    .header__logo img {
-        width: 250px;
-    }
     .menu-btn {
         margin-left: 10px;
         width: 40px;
@@ -255,7 +241,7 @@
         line-height: 11px;
     }
     .header-menu {
-        padding-bottom: 30px;
+        padding-bottom: 195px;
         &__list {
             font-size: 19px;
             line-height: 23px;
@@ -268,11 +254,11 @@
     .blog::before,
     .reviews::before {
         border-top-width: 89px;
-        top: -89px;
+        top: -88px;
     }
     .blog::after {
         border-bottom-width: 89px;
-        bottom: -89px;
+        bottom: -88px;
     }
     .blog-item__img {
         margin-bottom: 10px;
@@ -318,10 +304,10 @@
 @media (max-width: 700px) {
     .header::after {
         border-top-width: 100px;
-        bottom: -100px;
+        bottom: -99px;
     }
     .header-menu {
-        padding-bottom: 70px;
+        padding-bottom: 130px;
         &__list {
             font-size: 17px;
             line-height: 20px;
@@ -352,11 +338,11 @@
     .blog::before,
     .reviews::before {
         border-top-width: 69px;
-        top: -69px;
+        top: -68px;
     }
     .blog::after {
         border-bottom-width: 69px;
-        bottom: -69px;
+        bottom: -68px;
     }
     .blog__items {
         margin-bottom: 30px;
@@ -371,35 +357,14 @@
 @media (max-width: 550px) {
     .header::after {
         border-top-width: 70px;
-        bottom: -70px;
+        bottom: -69px;
     }
     .header__top-inner {
         padding: 15px 0 15px;
     }
-    .menu-btn {
-        margin-left: 5px;
-        width: 30px;
-        height: 30px;
-        &__inner {
-            width: 20px;
-        }
-        &__line+&__line {
-            margin-top: 3px;
-        }
-    }
-    .header-buttons__callme-btn {
-        font-size: 7px;
-        line-height: 8px;
-        padding: 5px 5px;
-    }
-    .header-buttons__basket {
-        img {
-            width: 15px;
-        }
-    }
     .header-menu {
-        top: 45px;
-        padding-bottom: 30px;
+        top: 60px;
+        padding-bottom: 80px;
         &__list {
             font-size: 15px;
             line-height: 17px;
@@ -407,9 +372,6 @@
     }
     .header__logo {
         margin-bottom: 10px;
-        img {
-            width: 200px;
-        }
     }
     .btn-link {
         padding: 6px 11px 7px;
@@ -455,13 +417,6 @@
         margin: 0 auto 20px;
     }
     .mfp-gallery__item {
-        margin: 0;
-        &:nth-child(2n) {
-            margin: 0;
-        }
-        &:nth-child(2n+1) {
-            margin-right: 0;
-        }
         img {
             max-width: 300px;
             width: 100%;
@@ -470,6 +425,9 @@
 }
 
 @media (max-width: 350px) {
+    .header-menu {
+        padding-bottom: 0;
+    }
     .blog-item {
         max-width: 250px;
     }

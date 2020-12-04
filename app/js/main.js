@@ -57,7 +57,7 @@ $(function() {
     $('.menu-btn__inner').on('click', function() {
         $('.header-menu').slideToggle();
         $('.header__btn').toggle();
+        $('a').removeClass('animate__animated');
     });
-
 
 });
