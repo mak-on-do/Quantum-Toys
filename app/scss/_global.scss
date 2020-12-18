@@ -71,6 +71,7 @@ body {
         font-size: 40px;
         line-height: 49px;
         padding: 0 70px;
+        white-space: nowrap;
     }
     &__line-left,
     &__line-right {
@@ -78,6 +79,17 @@ body {
         width: 100%;
         background: #000;
     }
+}
+
+.subtitle__txt {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 0 0 70px 0;
+    text-align: center;
+    max-width: 875px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .btn {
@@ -95,6 +107,7 @@ body {
     padding: 24px 65px 29px;
     background: #219BB7;
     box-shadow: 0px -5px 10px rgba(33, 155, 183, 0.6), 0px 5px 10px rgba(33, 155, 183, 0.6);
+    transition: box-shadow 400ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 400ms ease-in-out, color 300ms ease-in-out;
     &:hover {
         box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.6), 0px 5px 10px rgba(255, 255, 255, 0.6) inset;
