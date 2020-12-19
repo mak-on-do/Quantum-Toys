@@ -803,12 +803,10 @@
 
 .page-counter__arrow-right {
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
 }
 
 .page-counter__arrow-left {
     transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
 }
 
 .page-counter__active-page {
@@ -817,5 +815,109 @@
 
 
 /* page blog style end */
+
+
+/* page article style start */
+
+.article {
+    position: relative;
+    &-top__picture {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 945px;
+        width: 100%;
+        source,
+        img {
+            max-width: 945px;
+            width: 100%;
+        }
+    }
+}
+
+.article__inner {
+    margin-bottom: 160px;
+}
+
+.article-top {
+    padding: 153px 0;
+    margin-bottom: 70px;
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    &__date {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: #333;
+    }
+}
+
+.article-quote {
+    margin-bottom: 69px;
+    font-style: italic;
+    color: #333;
+    max-width: 870px;
+    &__item+&__item {
+        margin-top: 30px;
+    }
+}
+
+.article-list {
+    margin-bottom: 70px;
+    &__title {
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 41px;
+        margin-bottom: 30px;
+    }
+    &__item {
+        padding-left: 42px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            background: #36B4D1;
+            border-radius: 50%;
+        }
+    }
+    &__item+&__item {
+        margin-top: 30px;
+    }
+}
+
+.article-block {
+    margin-bottom: 50px;
+    &__img {
+        float: left;
+        margin: 0 30px 30px 0;
+        max-width: 470px;
+        width: 100%;
+        source,
+        img {
+            width: 470px;
+        }
+    }
+    &--right {
+        flex-direction: row-reverse;
+        .article-block__img {
+            float: right;
+            margin: 0 0 30px 30px;
+        }
+    }
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
 
 @import 'media';
