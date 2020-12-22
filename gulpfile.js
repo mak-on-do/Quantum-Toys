@@ -43,7 +43,9 @@ function jslibs() {
             'node_modules/jquery/dist/jquery.js',
             'node_modules/rateyo/src/jquery.rateyo.js',
             'node_modules/slick-carousel/slick/slick.js',
-            'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+            'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+            'app/js/jquery.maskedinput.js',
+            'app/js/jquery.formstyler.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -65,6 +67,7 @@ function csslibs() {
             'node_modules/rateyo/src/jquery.rateyo.css',
             'node_modules/slick-carousel/slick/slick.css',
             'node_modules/magnific-popup/dist/magnific-popup.css',
+            'app/css/jquery.formstyler.css',
             'node_modules/animate.css/animate.css'
         ])
         .pipe(scss({ outputStyle: 'compressed' }))

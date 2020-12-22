@@ -1,5 +1,6 @@
 $(function() {
     $(".rate-yo").rateYo({ starWidth: "24px", ratedFill: "#F3CE0D", spacing: "5px", normalFill: "#c4c4c4", readOnly: !0 });
+
     $(".reviews-slider__inner").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -11,10 +12,27 @@ $(function() {
             { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1 } },
         ],
     });
+
     $(".mfp-gallery__item").magnificPopup({ type: "image", closeOnContentClick: !0, mainClass: "mfp-img-mobile", image: { verticalFit: !0, gallery: !0 }, gallery: { enabled: !0 }, zoom: { enabled: !0, duration: 300 } });
+
     $(".menu-btn__inner").on("click", function() {
         $(".header-menu").slideToggle();
         $(".header__btn").toggle();
         $("a").removeClass("animate__animated");
     });
+
+    $('.popup-with-form').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        modal: true
+    });
+    $(document).on('click', '.popup-modal-dismiss', function(e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+
+    $('.mask-phone').mask('+7 (999) 999-99-99');
+
+    $('.form-style').styler();
+
 });

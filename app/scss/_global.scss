@@ -62,12 +62,6 @@ body {
     padding: 0 15px;
 }
 
-.container-fluid {
-    max-width: 1200px;
-    margin: 0;
-    padding: 0;
-}
-
 .title {
     display: flex;
     align-items: center;
@@ -110,14 +104,40 @@ body {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    padding: 24px 65px 29px;
-    background: #219BB7;
-    box-shadow: 0px -5px 10px rgba(33, 155, 183, 0.6), 0px 5px 10px rgba(33, 155, 183, 0.6);
-    transition: box-shadow 400ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 400ms ease-in-out, color 300ms ease-in-out;
-    &:hover {
-        box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.6), 0px 5px 10px rgba(255, 255, 255, 0.6) inset;
-        color: #116578;
-        background: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 16px 0 15px;
+    width: 100%;
+    color: #fff;
+    background: #36B4D1;
+    box-shadow: 0px -5px 10px rgba(33, 155, 183, 0.3), 0px 5px 10px rgba(33, 155, 183, 0.3);
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: 0px -5px 10px rgba(33, 155, 183, 0.6), 0px 5px 10px rgba(33, 155, 183, 0.6);
+        background: #57CFEB;
+    }
+}
+
+.btn-link-2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 0 15px;
+    width: 100%;
+    color: #36B4D1;
+    background: #fff;
+    border: 2px solid #36B4D1;
+    box-shadow: (0px -5px 10px rgba(33, 155, 183, 0.3)), (0px 5px 10px rgba(33, 155, 183, 0.3));
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+        color: #57CFEB;
+        border: 2px solid #57CFEB;
+        box-shadow: (0px -5px 10px rgba(33, 155, 183, 0.3)), (0px 5px 10px rgba(33, 155, 183, 0.3));
+        background: #fff;
     }
 }

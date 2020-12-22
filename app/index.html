@@ -55,7 +55,7 @@
 
                     <div class="header-buttons">
                         <a class="header-buttons__callme-btn" href="#">Перезвоните мне</a>
-                        <a class="header-buttons__basket" href="#">
+                        <a class="header-buttons__basket popup-with-form" href="#product-basket">
                             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0)">
                                 <path id="basket" fill="#fff" d="M4.558 7L9.259 2.298C9.458 2.1 9.719 2 9.98 2C10.593 2 11 2.505 11 3.029C11 3.279 10.908 3.533 10.701 3.74L7.441 7H4.558ZM16.559 7H19.442L14.741 2.298C14.542 2.1 14.281 2 14.02 2C13.407 2 13 2.505 13 3.029C13 3.279 13.092 3.533 13.299 3.74L16.559 7ZM20.262 11L20.246 11.041L16.648 20H7.352L3.755 11.039L3.739 11H20.262ZM24 9H0V11H0.643C1.177 11 1.664 11.304 1.899 11.784L6 22H18L22.102 11.786C22.335 11.305 22.824 11 23.358 11H24V9Z"/>
@@ -498,7 +498,115 @@
         </div>
     </footer>
 
+    <div id="product-basket" class="basket__item mfp-hide white-popup-block">
+        <a class="basket__close-modal popup-modal-dismiss" href="#"></a>
+        <p class="basket__item-title">
+            В корзине <span>2</span> товара
+        </p>
+        <div class="basket-content">
+            <div class="basket-content__title">
+                <div class="basket-content__title-prodname">Название товара</div>
+                <div class="basket-content__title-num">Количество</div>
+                <div class="basket-content__title-sum">Сумма</div>
+            </div>
+            <div class="basket-content__item">
+                <div class="basket-content__item-img">
+                    <picture class="basket-content__img">
+                        <source type="image/webp" srcset="images//content/section-cover-2.webp 1x, images//content/section-cover-2@2x.webp 2x, images//content/section-cover-2@3x.webp 3x">
+                        <img src="images//content/section-cover-2.png" srcset="images//content/section-cover-2@2x.png 2x, images//content/section-cover-2@3x.png 3x" alt="">
+                    </picture>
+                </div>
+                <p class="basket-content__item-prodname">
+                    Магнитный конструктор Magformers <br>Супер транспорт, 337 эл.
+                </p>
+                <div class="basket-content__item-num">
+                    <button class="basket-content__item-num-minus">-</button>
+                    <div class="basket-content__item-num-value">1</div>
+                    <button class="basket-content__item-num-plus">+</button>
+                </div>
+                <div class="basket-content__item-sum">29 300₽</div>
+                <button class="basket-content__item-del">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 22.1667C10.5 22.8107 9.97731 23.3333 9.33331 23.3333C8.68931 23.3333 8.16665 22.8107 8.16665 22.1667V10.5C8.16665 9.856 8.68931 9.33333 9.33331 9.33333C9.97731 9.33333 10.5 9.856 10.5 10.5V22.1667ZM15.1666 22.1667C15.1666 22.8107 14.644 23.3333 14 23.3333C13.356 23.3333 12.8333 22.8107 12.8333 22.1667V10.5C12.8333 9.856 13.356 9.33333 14 9.33333C14.644 9.33333 15.1666 9.856 15.1666 10.5V22.1667ZM19.8333 22.1667C19.8333 22.8107 19.3106 23.3333 18.6666 23.3333C18.0226 23.3333 17.5 22.8107 17.5 22.1667V10.5C17.5 9.856 18.0226 9.33333 18.6666 9.33333C19.3106 9.33333 19.8333 9.856 19.8333 10.5V22.1667ZM25.6666 2.33333V4.66667H2.33331V2.33333H8.99615C10.0461 2.33333 10.899 1.05117 10.899 0H17.0998C17.0998 1.05117 17.9515 2.33333 19.0026 2.33333H25.6666ZM22.1666 7V25.6667H5.83331V7H3.49998V28H24.5V7H22.1666Z" fill="#333333"/></svg>
+                </button>
+            </div>
+            <div class="basket-content__item">
+                <div class="basket-content__item-img">
+                    <picture class="basket-content__img">
+                        <source type="image/webp" srcset="images//content/section-cover-2.webp 1x, images//content/section-cover-2@2x.webp 2x, images//content/section-cover-2@3x.webp 3x">
+                        <img src="images//content/section-cover-2.png" srcset="images//content/section-cover-2@2x.png 2x, images//content/section-cover-2@3x.png 3x" alt="">
+                    </picture>
+                </div>
+                <p class="basket-content__item-prodname">
+                    Магнитный конструктор Magformers <br>Мой первый набор, 100 эл.
+                </p>
+                <div class="basket-content__item-num">
+                    <button class="basket-content__item-num-minus">-</button>
+                    <div class="basket-content__item-num-value">1</div>
+                    <button class="basket-content__item-num-plus">+</button>
+                </div>
+                <div class="basket-content__item-sum">9 900₽</div>
+                <button class="basket-content__item-del">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 22.1667C10.5 22.8107 9.97731 23.3333 9.33331 23.3333C8.68931 23.3333 8.16665 22.8107 8.16665 22.1667V10.5C8.16665 9.856 8.68931 9.33333 9.33331 9.33333C9.97731 9.33333 10.5 9.856 10.5 10.5V22.1667ZM15.1666 22.1667C15.1666 22.8107 14.644 23.3333 14 23.3333C13.356 23.3333 12.8333 22.8107 12.8333 22.1667V10.5C12.8333 9.856 13.356 9.33333 14 9.33333C14.644 9.33333 15.1666 9.856 15.1666 10.5V22.1667ZM19.8333 22.1667C19.8333 22.8107 19.3106 23.3333 18.6666 23.3333C18.0226 23.3333 17.5 22.8107 17.5 22.1667V10.5C17.5 9.856 18.0226 9.33333 18.6666 9.33333C19.3106 9.33333 19.8333 9.856 19.8333 10.5V22.1667ZM25.6666 2.33333V4.66667H2.33331V2.33333H8.99615C10.0461 2.33333 10.899 1.05117 10.899 0H17.0998C17.0998 1.05117 17.9515 2.33333 19.0026 2.33333H25.6666ZM22.1666 7V25.6667H5.83331V7H3.49998V28H24.5V7H22.1666Z" fill="#333333"/></svg>
+                </button>
+            </div>
+            <div class="basket-content__amount">
+                <div class="basket-content__amount-title">Итого к оплате:</div>
+                <div class="basket-content__amount-num">39 200₽</div>
+            </div>
+            <a class="btn-link basket-content__ordering popup-with-form" href="#ordering">Оформить заказ</a>
+        </div>
+    </div>
 
+    <div id="ordering" class="ordering mfp-hide white-popup-block">
+        <a class="ordering__close-modal popup-modal-dismiss" href="#"></a>
+        <h2 class="ordering__title">
+            Оформление заказа
+        </h2>
+        <form class="ordering__form">
+            <div class="ordering__form-box">
+                <input class="ordering__form-name" type="text" name="name" placeholder="ФИО" required>
+            </div>
+            <div class="ordering__form-box">
+                <input class="ordering__form-tel mask-phone" type="tel" name="tel" placeholder="Телефон" required>
+            </div>
+            <div class="ordering__form-box">
+                <input class="ordering__form-address" type="text" name="address" placeholder="Адрес доставки" required>
+            </div>
+            <div class="ordering__form-box">
+                <select class="form-style" name="city" id="">
+                    <option value="">Способ доставки</option>
+                    <option value="">Курьером</option>
+                    <option value="">Почта 1</option>
+                    <option value="">Почта 2</option>
+                    <option value="">Служба доставки 1</option>
+                    <option value="">Служба доставки 2</option>
+                </select>
+            </div>
+            <div class="ordering__form-box">
+                <select class="form-style" name="city" id="">
+                    <option value="">Способ оплаты</option>
+                    <option value="">Банковской картой онлайн</option>
+                    <option value="">При получении наличными</option>
+                    <option value="">Банковской картой курьеру</option>
+                </select>
+            </div>
+        </form>
+        <a class="btn-link ordering__ordering popup-with-form" href="#order-processed">Оформить заказ</a>
+    </div>
+
+    <div id="order-processed" class="order-processed mfp-hide white-popup-block">
+        <a class="order-processed__close-modal popup-modal-dismiss" href="#"></a>
+        <h2 class="order-processed__title">
+            Спасибо за ваш заказ
+        </h2>
+        <p class="order-processed__text">
+            В случае необходимости каких-либо уточнений наш менеджер в ближайшее время свяжется с Вами
+        </p>
+        <p class="order-processed__amount">
+            Сумма вашего заказа:
+            <span class="order-processed__amount-num">39 200₽</span>
+        </p>
+    </div>
 
 
     <script src="js/libs.min.js"></script>
